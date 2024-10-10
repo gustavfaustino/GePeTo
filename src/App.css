@@ -1,0 +1,114 @@
+* {
+  margin: 0;
+  padding: 0;
+  box-sizing: border-box;
+
+}
+
+/* Ajuste para calculo REM */
+html {
+  font-size: 62.5%;
+
+}
+
+/* Corpo da pagina */
+body {
+  background: rgb(3, 0, 31);
+  color: white;
+  /* Fonte */
+  font-family: 'Poppins', sans-serif;
+}
+
+.App {
+  min-height: 100vh;
+  display: flex;
+}
+
+.sideBar {
+  border-right: 1px solid #333;
+}
+
+.logo{
+  margin-right: 1rem;
+}
+
+.brand{
+  font-size: 2.5rem;
+}
+
+.upperSidebar{
+  padding: 2.5rem;
+  border-bottom: 1px solid #333;
+  height: 70%;
+}
+
+.upperSidebarTop {
+  display: flex;
+  align-items: center;
+  margin-bottom: 2.5rem;
+}
+
+.addBtn {
+  height: 2rem;
+  padding-right: 1rem;
+
+}
+
+.midBtn {
+  /* TODO: Change color */
+  background: #5A4BFF; 
+  border: none;
+  color: white;
+  padding: 1.5rem;
+  font-size: 1.5rem;
+  width: 25rem;
+  display: flex;
+  align-items: center;
+  justify-content: center;
+  margin: 0 auto;
+  margin-bottom: 3rem;
+  border-radius: 0.8rem;
+}
+
+.query {
+  display: flex;
+  align-items: center;
+  background: transparent;
+  color: rgba(222,222,222,1);
+  padding: 1.5rem;
+  width: 25rem;
+  margin: 1rem auto;
+  border-radius: 0.8rem;
+  border: 1px solid rgba();
+}
+
+.query img {
+  padding-right: 1.8rem;
+  object-fit: cover;
+  height: 1.7rem;
+}
+
+.lowerSidebar {
+  padding: 2.5rem;
+  height: 30%;
+}
+
+.listItems {
+  margin: 0.8rem;
+  display: flex;
+  align-items: center;
+  font-size: 1.2rem;
+}
+
+.listItemIMG {
+  margin: 1rem;
+  padding-right: 1rem;
+}
+
+.listItems:nth-child(1)>.listItemIMG {
+  margin-right: 0.5rem;
+}
+
+.listItems:nth-child(3)>.listItemIMG {
+  margin-right: 0.7rem;
+}

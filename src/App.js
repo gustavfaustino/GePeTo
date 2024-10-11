@@ -6,10 +6,15 @@ import homeIcon from './assets/home.svg';
 import savedIcon from './assets/bookmark.svg';
 import upgradeIcon from './assets/rocket.svg';
 // import aboutIcon from './assets/about.svg';
+import userIcon from './assets/user-icon.png';
+import sendBtn from './assets/send.svg';
+import gptImgLogo from './assets/chatgptLogo.svg';
 
 function App() {
   return (
     <div className="App">
+
+      {/* Barra lateral, SIDEBAR */}
       <div className="sideBar">
         <div className='upperSidebar'>
           <div className='upperSidebarTop'>
@@ -27,8 +32,29 @@ function App() {
           <div className='listItems'><img src={upgradeIcon} alt='' className='listItemIMG' />UPGRADE</div>
         </div>
       </div>
-      <div className="Main">
 
+      {/* Início do MAIN, Bloco da direita */}
+      <div className="main">
+        <div className='chats'>
+          <div className='chat'>
+            <img className='chatImg' src={userIcon} alt='User icon' />
+            <p className='txt'>lorem ipsun oad doak doak oadk oakd</p>
+          </div>
+          <div className='chat bot'>
+            <img className='chatImg' src={gptImgLogo} alt='ChatGPT Logo' />
+            <p className='txt'>Lorem ipsum dolor sit amet, consectetur adipiscing elit. Maecenas ultrices, magna vel cursus faucibus, nibh tortor porttitor dolor, sit amet fringilla purus ante non elit. Vivamus suscipit congue vestibulum. Lorem ipsum dolor sit amet, consectetur adipiscing elit. Etiam eros mauris, luctus sed odio sed, vestibulum condimentum quam. Sed non neque ornare, maximus purus sit amet, volutpat risus. Nullam et mollis urna, at euismod dolor. Aliquam convallis sapien nec placerat gravida. Fusce efficitur metus at lacus porta volutpat. Aenean mattis purus vitae dapibus gravida. Proin suscipit malesuada facilisis. Praesent porta nibh pharetra risus consectetur porttitor. Donec orci odio, sollicitudin iaculis arcu.</p>
+          </div>
+        </div>
+
+        <div className='chatFooter'>
+          <div className='inp'>
+            <input type='text' placeholder='Type a message...' name='' id='' />
+            <button className='send'>
+              <img src={sendBtn} alt='Send message to AI button' />
+            </button>
+          </div>
+          <p>GePeTo may produce inaccurate information about people, places or facts. GePeTo October 11 Version</p>
+        </div>
       </div>
     </div >
 
